@@ -1,13 +1,5 @@
-import { App } from 'vue';
+export { default as LButton } from './button';
+export { default as LInput } from './input';
 
-import Button from './button';
-
-const components = [Button];
-
-const install = (app: App): void => {
-  components.map((component) => app.component(component.name, component));
-};
-
-export default {
-  install
-};
+// import LButton from './button';
+// export default [LButton];

@@ -1,8 +1,8 @@
 import { App } from 'vue';
-import Button from '../button/button.vue';
+import LButton from '../button/button.vue';
 
-Button.install = (app: App): void => {
-  app.component(Button.name, Button);
+LButton.install = (app: App): void => {
+  app.component(LButton.name, LButton);
 };
 
-export default Button;
+export default LButton;
