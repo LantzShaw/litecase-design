@@ -16,13 +16,13 @@ $ npm i litecase-design
 
 ```ts
 import { createApp } from 'vue'
-import LiteCaseDesign from 'litecase-design
+import LitecaseDesign from 'litecase-design'
 
 import App from './App.vue'
 
 const app = createApp(App)
 
-app.use(LiteCaseDesign)
+app.use(LitecaseDesign)
 app.mount('#app')
 ```
 
