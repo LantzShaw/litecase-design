@@ -34,6 +34,6 @@ app.mount('#app')
 </template>
 
 <script lang="ts" setup>
-import { LButton } from 'litecase-design
+import { LButton } from 'litecase-design'
 </script>
 ```
