@@ -11,3 +11,29 @@ $ npm i litecase-design
 ```
 
 ## Usage
+
+**Fully Import**
+
+```ts
+import { createApp } from 'vue'
+import LiteCaseDesign from 'litecase-design
+
+import App from './App.vue'
+
+const app = createApp(App)
+
+app.use(LiteCaseDesign)
+app.mount('#app')
+```
+
+**Manually Import**
+
+```vue
+<template>
+    <l-button label="Button"></l-button>
+</template>
+
+<script lang="ts" setup>
+import { LButton } from 'litecase-design
+</script>
+```
