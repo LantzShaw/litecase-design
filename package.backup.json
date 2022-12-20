@@ -1,0 +1,46 @@
+{
+  "name": "litecase-design",
+  "private": false,
+  "version": "0.0.0-beta.0",
+  "license": "MIT",
+  "author": "Lantz<lantzshaw@gmail.com>",
+  "description": "A UI component library for vue",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/bundle.umd.js",
+  "source": "packages/index.ts",
+  "module": "./lib/bundle.es.js",
+  "contributors": [
+    {
+      "name": "Lantz",
+      "email": "lantzshaw@gmail.com",
+      "url": "http://www.litecase.cn"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LantzShaw/litecase-design.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "prepublish": "pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "typescript": "^4.5.4",
+    "unplugin-vue-define-options": "^0.5.0",
+    "vite": "^2.8.0",
+    "vue-tsc": "^0.29.8",
+    "vue": "^3.2.31"
+  },
+  "keywords": [
+    "vue",
+    "UI"
+  ],
+  "dependencies": {
+  }
+}

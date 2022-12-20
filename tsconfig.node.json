@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true, // 可以通过import的方式引入path等模块
+  },
+  "include": ["vite.config.ts"]
+}
