@@ -18,7 +18,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'packages/index'),
       name: 'litecase-design',
       fileName: (format) => `bundle.${format}.js`
-      // formats: ['es', 'cjs']
+      // formats: ['es', 'cjs'] // iife(自调用函数)
       // umd：打包后代码很紧凑、体积小，但是不易读；
       // es：打包后的代码和我们写的代码很像，易读，但是体积大。 \
       // js.map: 调试代码
