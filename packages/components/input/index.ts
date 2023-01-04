@@ -1,8 +1,8 @@
 import { App } from 'vue';
-import LInput from './input.vue';
+import Input from './Input';
 
-LInput.install = (app: App): void => {
-  app.component(LInput.name, LInput);
+Input.install = (app: App): void => {
+  app.component(Input.name, Input);
 };
 
-export default LInput;
+export default Input;

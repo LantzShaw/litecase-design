@@ -2,10 +2,10 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import DefineOptions from 'unplugin-vue-define-options/vite';
 import path from 'path';
-import dts from 'vite-plugin-dts';
+// import dts from 'vite-plugin-dts';
 
 export default defineConfig({
-  plugins: [vue(), DefineOptions(), dts()],
+  plugins: [vue(), DefineOptions()], // dts()
   build: {
     target: 'modules',
     // 打包文件目录
@@ -36,7 +36,7 @@ export default defineConfig({
           // 让打包目录和我们目录对应
           preserveModules: true,
           //配置打包根目录
-          dir: 'es',
+          dir: 'dist/es',
           preserveModulesRoot: 'packages',
           // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
           globals: {
@@ -51,7 +51,7 @@ export default defineConfig({
           // 让打包目录和我们目录对应
           preserveModules: true,
           //配置打包根目录
-          dir: 'lib',
+          dir: 'dist/lib',
           preserveModulesRoot: 'packages',
           // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
           globals: {

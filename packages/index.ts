@@ -1,9 +1,9 @@
 import { App } from 'vue';
 
 // import Components from './components';
-import { LButton, LInput } from './components';
+import { Button, Input } from './components';
 
-const components = [LButton, LInput];
+const components = [Button, Input];
 
 const install = (app: App): void => {
   // if (install.installed) return;
@@ -11,7 +11,7 @@ const install = (app: App): void => {
   components.map((component) => app.component(component.name, component));
 };
 
-export { LButton, LInput };
+export { Button, Input };
 
 export default {
   install

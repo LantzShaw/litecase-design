@@ -50,6 +50,60 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 ```
 
+备份 `Button.vue`
+
+```vue
+<template>
+  <button>{{ a }}</button>
+</template>
+
+<script lang="ts" setup>
+import { ref } from 'vue';
+
+// import type { ButtonProps } from './button.d';
+
+// import { ButtonProps } from './button';
+
+// NOTE: 暂不支持外部引入
+// import type { Props } from './data.d';
+
+// NOTE: type不要加
+// type Props = {
+//   label?: string;
+// };
+
+// NOTE: interface需要加export
+// export interface Props {
+//   label?: string;
+// }
+
+const a = ref('button');
+
+defineOptions({
+  name: 'LButton'
+});
+
+// const props = withDefaults(defineProps<ButtonProps>(), {});
+</script>
+
+<!-- <template>
+  <button>{{ a }}</button>
+</template>
+
+<script lang="ts">
+import { defineComponent, ref } from 'vue';
+
+export default defineComponent({
+  name: 'l-button',
+  setup(props) {
+    const a = ref('button');
+
+    return { a };
+  }
+});
+</script> -->
+```
+
 ## bugs
 
 #### `npm run build`时， `.vu`e 报错变量 cannot find name xxxx , 也就是无法编译插值中的变量
