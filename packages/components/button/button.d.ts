@@ -1,4 +1,4 @@
-// import { ExtractPropTypes } from 'vue';
+import { ExtractPropTypes } from 'vue';
 
 // export type ButtonType =
 //   | 'default'
@@ -9,6 +9,7 @@
 
 // export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
 
+// NOTE: 这里type定义 不是const 所以不能用ExtractPropTypes
 // export type ButtonProps = {
 //   type: {
 //     type: String;
@@ -19,5 +20,3 @@
 //     values: ButtonSize;
 //   };
 // };
-
-// // export type ButtonProps = ExtractPropTypes<typeof buttonProps>;

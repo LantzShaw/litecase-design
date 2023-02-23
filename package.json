@@ -4,7 +4,7 @@
   "version": "0.0.0-beta.0",
   "type": "module",
   "license": "MIT",
-  "author": "Lantz<lantzshaw@gmail.com>",
+  "author": "Lantz <lantzshaw@gmail.com>",
   "description": "A UI component library for vue",
   "files": [
     "lib"
@@ -26,7 +26,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
+    "preview": "pnpm --dir examples dev",
     "prepublish": "pnpm build"
   },
   "devDependencies": {
